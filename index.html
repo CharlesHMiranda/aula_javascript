@@ -4,11 +4,20 @@
         <title>Minha Página</title>
         <meta charset="utf-8">
     </head>
-    <body>
-        <script>
-            alert("Cuidado!");
-        </script>
+    <body onload="load()">
+        <script type="text/javascript" src="js/aula_lacos.js"></script>
         <h1>Minha Primeira Página</h1>
-        
-        </body>
+        Teste
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"> Redirecionar </p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse Aqui. </p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse Aqui. </p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse Aqui. </p>
+        <select onchange="funcaoChange(this)">
+            <option>Selecione</option>
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
 </html>
